@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[8947],{6600:a=>{a.exports=JSON.parse('{"authors":[{"name":"VaultiScan Team","title":"AI-Powered Document Analysis","url":"https://vaultiscan.ai","imageURL":"https://github.com/vaultiscan.png","key":"vaultiscan","page":null,"count":1}]}')}}]);

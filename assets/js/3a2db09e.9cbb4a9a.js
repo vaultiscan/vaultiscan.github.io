@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[8121],{8070:a=>{a.exports=JSON.parse('{"tags":[{"label":"tutorial","permalink":"/blog/tags/tutorial","count":1},{"label":"javascript","permalink":"/blog/tags/javascript","count":1},{"label":"basic","permalink":"/blog/tags/basic","count":1}]}')}}]);

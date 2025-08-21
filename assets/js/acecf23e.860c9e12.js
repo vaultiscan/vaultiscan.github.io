@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/blog","blogTitle":"Blog","authorsListPath":"/blog/authors"}')}}]);

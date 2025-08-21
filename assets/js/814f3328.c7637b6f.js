@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[7472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Basic VaultiScan Integration Example","permalink":"/blog/basic-integration-example","unlisted":false,"date":"2025-08-11T00:00:00.000Z"}]}')}}]);
