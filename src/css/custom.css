@@ -1,0 +1,314 @@
+/**
+ * VaultiScan Custom Styles
+ * Brand colors and styling based on https://vaultiscan.ai
+ */
+
+/* VaultiScan Brand Color Palette */
+:root {
+  /* Primary brand colors */
+  --ifm-color-primary: #6366f1;
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
+  
+  /* Secondary colors */
+  --ifm-color-secondary: #8b5cf6;
+  --ifm-color-secondary-dark: #7c3aed;
+  --ifm-color-secondary-darker: #6d28d9;
+  --ifm-color-secondary-darkest: #5b21b6;
+  
+  /* Neutral colors */
+  --ifm-color-gray-900: #111827;
+  --ifm-color-gray-800: #1f2937;
+  --ifm-color-gray-700: #374151;
+  --ifm-color-gray-600: #4b5563;
+  --ifm-color-gray-500: #6b7280;
+  --ifm-color-gray-400: #9ca3af;
+  --ifm-color-gray-300: #d1d5db;
+  --ifm-color-gray-200: #e5e7eb;
+  --ifm-color-gray-100: #f3f4f6;
+  --ifm-color-gray-50: #f9fafb;
+  
+  /* Success/Error colors */
+  --ifm-color-success: #10b981;
+  --ifm-color-warning: #f59e0b;
+  --ifm-color-danger: #ef4444;
+  --ifm-color-info: #3b82f6;
+  
+  /* Code and content */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
+  
+  /* Fonts */
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  --ifm-font-family-monospace: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] {
+  --ifm-color-primary: #818cf8;
+  --ifm-color-primary-dark: #6366f1;
+  --ifm-color-primary-darker: #4f46e5;
+  --ifm-color-primary-darkest: #4338ca;
+  --ifm-color-primary-light: #a5b4fc;
+  --ifm-color-primary-lighter: #c7d2fe;
+  --ifm-color-primary-lightest: #e0e7ff;
+  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.3);
+}
+
+/* Hero section styling */
+.hero {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>') repeat;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.hero__title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(45deg, #ffffff, #e0e7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  position: relative;
+  z-index: 1;
+}
+
+/* VaultiScan branded components */
+.vaultiscan-card {
+  border: 1px solid var(--ifm-color-gray-300);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  background: var(--ifm-background-color);
+  box-shadow: 0 4px 6px rgba(99, 102, 241, 0.1);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.vaultiscan-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+}
+
+.vaultiscan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(99, 102, 241, 0.15);
+  border-color: var(--ifm-color-primary);
+}
+
+.security-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+  display: block;
+}
+
+/* Enhanced code blocks */
+.prism-code {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--ifm-color-gray-200);
+}
+
+[data-theme='dark'] .prism-code {
+  border-color: var(--ifm-color-gray-700);
+}
+
+/* Announcement bar styling */
+.announcementBar_node_modules-\@docusaurus-theme-classic-lib-theme-AnnouncementBar-styles-module {
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  color: white;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+/* Navigation enhancements */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__brand {
+  font-weight: 700;
+}
+
+.navbar__logo {
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.navbar__title {
+  font-weight: 700;
+  color: var(--ifm-color-gray-900);
+}
+
+[data-theme='dark'] .navbar__title {
+  color: var(--ifm-color-gray-100);
+}
+
+/* Footer styling */
+.footer {
+  background: var(--ifm-color-gray-900);
+  color: var(--ifm-color-gray-100);
+  padding: 3rem 0;
+}
+
+.footer__title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.footer__link-item {
+  color: var(--ifm-color-gray-300);
+  transition: color 0.2s ease;
+}
+
+.footer__link-item:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+/* Sidebar enhancements */
+.theme-doc-sidebar-item-link {
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.theme-doc-sidebar-item-link--active {
+  background: rgba(99, 102, 241, 0.15);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+/* Button enhancements */
+.button--primary {
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.2);
+}
+
+.button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.3);
+}
+
+/* Badge styling */
+.badge {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.badge--primary {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.badge--secondary {
+  background: var(--ifm-color-secondary);
+  color: white;
+}
+
+/* Table enhancements */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+table thead tr {
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  color: white;
+}
+
+table tbody tr:nth-child(even) {
+  background: rgba(99, 102, 241, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2.5rem;
+  }
+  
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .vaultiscan-card {
+    padding: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .navbar__logo {
+    height: 32px;
+  }
+}
+
+/* Loading and animation enhancements */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.vaultiscan-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(45deg, #6366f1, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 600;
+}
+
+.border-gradient {
+  border: 2px solid transparent;
+  background: linear-gradient(var(--ifm-background-color), var(--ifm-background-color)) padding-box,
+              linear-gradient(45deg, #6366f1, #8b5cf6) border-box;
+  border-radius: 8px;
+}
