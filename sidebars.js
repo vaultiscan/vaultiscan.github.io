@@ -13,59 +13,121 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  // Main documentation sidebar
-  tutorialSidebar: [
-    'intro',
-    'installation',
-    'configuration',
-    'authentication',
+  // Main Embedding SDK sidebar
+  embeddingSidebar: [
+    "intro",
+    "installation",
+    "configuration",
+    "authentication",
     {
-      type: 'category',
-      label: 'Getting Started',
+      type: "category",
+      label: "Getting Started",
       items: [
-        'getting-started/installation',
-        'getting-started/quick-start',
-        'getting-started/configuration',
-        'getting-started/authentication',
+        "getting-started/installation",
+        "getting-started/quick-start",
+        "getting-started/configuration",
+        "getting-started/authentication",
       ],
     },
     {
-      type: 'category',
-      label: 'Embedding SDK',
+      type: "category",
+      label: "Embedding SDK",
       items: [
-        'embedding-sdk/overview',
-        'embedding-sdk/javascript-sdk',
-        'embedding-sdk/react-components',
-        'embedding-sdk/vue-components',
-        'embedding-sdk/angular-components',
+        "embedding-sdk/overview",
+        "embedding-sdk/javascript-sdk",
+        "embedding-sdk/react-components",
+        "embedding-sdk/vue-components",
+        "embedding-sdk/angular-components",
       ],
     },
     {
-      type: 'category',
-      label: 'Features',
+      type: "category",
+      label: "Features",
       items: [
-        'features/vulnerability-scanning',
-        'features/security-reports',
-        'features/monitoring',
-        'features/integrations',
+        "features/vulnerability-scanning",
+        "features/security-reports",
+        "features/monitoring",
+        "features/integrations",
       ],
     },
     {
-      type: 'category',
-      label: 'API Reference',
+      type: "category",
+      label: "API Reference",
+      items: ["api", "api/overview"],
+    },
+    {
+      type: "category",
+      label: "Examples",
+      items: ["examples/basic-integration"],
+    },
+    "changelog",
+  ],
+
+  // Google Drive Connector sidebar
+  googleDriveSidebar: [
+    {
+      type: "doc",
+      id: "connectors/google-drive/intro",
+      label: "Google Drive Connector",
+    },
+    {
+      type: "category",
+      label: "Getting Started",
       items: [
-        'api',
-        'api/overview',
+        "connectors/google-drive/configuration",
+        "connectors/google-drive/vaultiscan-setup",
       ],
     },
     {
-      type: 'category',
-      label: 'Examples',
-      items: [
-        'examples/basic-integration',
-      ],
+      type: "doc",
+      id: "connectors/google-drive/security-and-privacy",
+      label: "Security and Privacy",
     },
-    'changelog',
+    {
+      type: "doc",
+      id: "connectors/google-drive/troubleshooting",
+      label: "Troubleshooting",
+    },
+    {
+      type: "doc",
+      id: "connectors/google-drive/faq",
+      label: "FAQ",
+    },
+    {
+      type: "doc",
+      id: "connectors/google-drive/changelog",
+      label: "Changelog",
+    },
+  ],
+
+  // SharePoint Connector sidebar
+  sharepointSidebar: [
+    {
+      type: "doc",
+      id: "connectors/sharepoint/intro",
+      label: "Introduction",
+    },
+    // Add more sections...
+  ],
+
+  // DropBox Connector sidebar
+  dropboxSidebar: [
+    {
+      type: "doc",
+      id: "connectors/dropbox/intro",
+      label: "Introduction",
+    },
+    // Add sections...
+  ],
+
+  // Teams Connector sidebar
+  teamsSidebar: [
+    {
+      type: "doc",
+      id: "connectors/teams/intro",
+      label: "Introduction",
+    },
+    // Add sections...
   ],
 };
 
