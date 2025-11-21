@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[6366],{6366:(e,s,c)=>{c.d(s,{createArchitectureServices:()=>d.S});var d=c(8980);c(7960)}}]);

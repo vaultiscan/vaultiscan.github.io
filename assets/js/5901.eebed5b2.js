@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkvaultiscan_embedding_sdk_docs=self.webpackChunkvaultiscan_embedding_sdk_docs||[]).push([[5901],{5901:(e,s,d)=>{d.d(s,{createTreemapServices:()=>a.d});var a=d(1633);d(7960)}}]);
