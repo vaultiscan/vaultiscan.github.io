@@ -130,6 +130,11 @@ const sidebars = {
       id: "connectors/sharepoint/faq",
       label: "FAQ",
     },
+    {
+      type: "doc",
+      id: "connectors/sharepoint/changelog",
+      label: "Changelog",
+    },
     // Add more sections...
   ],
 
