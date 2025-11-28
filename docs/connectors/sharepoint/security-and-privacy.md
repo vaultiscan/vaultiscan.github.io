@@ -3,7 +3,7 @@ title: Security & Privacy
 sidebar_label: Security & Privacy
 ---
 
-# Security & Privacy for Google Drive Connector
+# Security & Privacy for SharePoint Connector
 
 VaultiScan’s SharePoint connector is designed with strict least‑privilege access and enterprise‑grade data protection.
 
