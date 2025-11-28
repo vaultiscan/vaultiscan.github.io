@@ -3,7 +3,7 @@ title: Changelog
 sidebar_label: Changelog
 ---
 
-# Google Connector Changelog
+# SharePoint Connector Changelog
 
 ## 🆕 November 2025
 

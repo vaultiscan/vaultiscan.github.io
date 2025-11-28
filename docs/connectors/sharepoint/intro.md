@@ -58,7 +58,7 @@ VaultiScan is built with privacy and compliance at its core:
 
 ## Real-Time Synchronization
 
-VaultiScan continuously synchronizes Google Drive content:
+VaultiScan continuously synchronizes SharePoint content:
 
 - Detects and reindexes document changes automatically.
 - Guarantees every answer reflects the newest version.
