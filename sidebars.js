@@ -105,7 +105,35 @@ const sidebars = {
     {
       type: "doc",
       id: "connectors/sharepoint/intro",
-      label: "Introduction",
+      label: "SharePoint Connector",
+    },
+    {
+      type: "category",
+      label: "Getting Started",
+      items: [
+        "connectors/sharepoint/configuration",
+        "connectors/sharepoint/vaultiscan-setup",
+      ],
+    },
+    {
+      type: "doc",
+      id: "connectors/sharepoint/security-and-privacy",
+      label: "Security and Privacy",
+    },
+    {
+      type: "doc",
+      id: "connectors/sharepoint/troubleshooting",
+      label: "Troubleshooting",
+    },
+    {
+      type: "doc",
+      id: "connectors/sharepoint/faq",
+      label: "FAQ",
+    },
+    {
+      type: "doc",
+      id: "connectors/sharepoint/changelog",
+      label: "Changelog",
     },
     // Add more sections...
   ],
