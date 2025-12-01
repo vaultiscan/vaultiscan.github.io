@@ -86,6 +86,6 @@ Once deactivated, the connector is hidden for all users until it is reactivated.
 ### Are queries from VaultiScan visible in my SharePoint account activity?
 
 Yes. VaultiScan’s Microsoft Graph API activity related to SharePoint may appear in your **Microsoft 365 account’s activity logs**.
-This is part of Google’s standard security monitoring and transparency.
+This is part of Microsoft's standard security monitoring and transparency.
 
 ---

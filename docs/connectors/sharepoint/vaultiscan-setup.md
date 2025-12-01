@@ -34,14 +34,14 @@ _Navigation to Organization (Customer) Dashboard_
 
 1. On the edit page, open the **Connector** tab
 2. You'll see a list of available connectors
-3. From this list, select **Google Drive**
+3. From this list, select **SharePoint**
 
-![Open the Connector Tab](/img/google_drive/gd_14.png)
+![Open the Connector Tab](/img/sharepoint/sp_5.png)
 _Open the Connector Tab_
 
 ## Step 3: Edit Connector Configuration
 
-When you select the Google Drive connector, a JSON configuration editor will appear on the right-hand side.
+When you select the SharePoint connector, a JSON configuration editor will appear on the right-hand side.
 
 1. Click **Edit** (located above the JSON editor)
 2. Enter your `client_id`, `client_secret`, and `search_limit`
@@ -50,13 +50,13 @@ When you select the Google Drive connector, a JSON configuration editor will app
 
 ```json
 {
-  "client_id": "your-google-client-id",
-  "client_secret": "your-google-client-secret",
+  "client_id": "your-sharepoint-client-id",
+  "client_secret": "your-sharepoint-client-secret",
   "search_limit": 2
 }
 ```
 
-![Edit Connector Configuration](/img/google_drive/gd_15.png)
+![Edit Connector Configuration](/img/sharepoint/sp_6.png)
 _Edit Connector Configuration_
 
 > 💡 **Tip:** The `search_limit` value determines how many Drive documents VaultiScan will analyze for each user prompt. A value between 2–5 is recommended for optimal performance and accuracy.
@@ -67,26 +67,25 @@ _Edit Connector Configuration_
 
 Once the configuration is saved:
 
-- The Google Drive connector becomes available to users and workspace admins in the chat interface
+- The SharePoint connector becomes available to users and workspace admins in the chat interface
 - As an Organization Admin, select a workspace from the top workspace selector before using chat to access the connector
 
 ## Step 5: Using the Connector in Chat
 
 1. Navigate to the **Chat** page
 2. In the question input box, click on the **Tools** button
-3. You'll see Google Drive listed as an available connector
-4. Next to it, click **Connect** to authorize your Google Drive account
+3. You'll see SharePoint listed as an available connector
+4. Next to it, click **Connect** to authorize your SharePoint account
 
-![Connect to Google Drive Connector](/img/google_drive/gd_16.png)
-_Connect to Google Drive Connector_
+![Connect to SharePoint Connector](/img/sharepoint/sp_7.png)
 
-## Step 6: Authorize Google Drive Access
+_Connect to SharePoint Connector_
 
-1. A popup will appear asking to authorize access to your Google Drive account
-2. Click **Authorize** — you'll be redirected to the Google login page
-3. Sign in with your Google account (or select an existing one)
-4. Grant read-only access when prompted
-5. Once authorization is complete, you'll be redirected back to VaultiScan, and your connector will be active
+## Step 6: Authorize SharePoint Drive Access
+
+1. VaultiScan uses an app-only connection to SharePoint, authenticated with the configured client ID, client secret/certificate, and tenant details, rather than individual user accounts.
+2. Your Microsoft 365 admin must grant the required application permissions (for example, Files.Read.All or Sites.Selected–based access) to allow the app to read SharePoint content without user interaction.
+3. Once these permissions are granted and saved in VaultiScan, the SharePoint connector will connect automatically in the background and appear as Active without any end-user sign-in step.
 
 ## Step 7: Managing Connector Access
 
@@ -98,15 +97,15 @@ As an Organization Admin, you can:
 
 ## Step 8: Revoking Access
 
-As a user, you can revoke VaultiScan's access to your Google Drive at any time:
+As a user, you can revoke VaultiScan's access to your SharePoint at any time:
 
-1. Go to your **Google Account → Security → Third-party apps with account access**
+1. Go to your **SharePoint Account → Security → Third-party apps with account access**
 2. Find **VaultiScan** in the list
 3. Click **Remove Access**
 
 **Once revoked:**
 
-- VaultiScan will automatically detect that your Google Drive access was revoked
+- VaultiScan will automatically detect that your SharePoint access was revoked
 - You'll see a message indicating that access has been removed
 - You can choose to **Reconnect** your account or permanently **Remove** the connection
 
@@ -115,14 +114,18 @@ As a user, you can revoke VaultiScan's access to your Google Drive at any time:
 | Step | Action             | Location                                     |
 | ---- | ------------------ | -------------------------------------------- |
 | 1    | Navigate to Setup  | Setup → Organization → Edit                  |
-| 2    | Open Connector Tab | Connector Tab → Google Drive                 |
+| 2    | Open Connector Tab | Connector Tab → SharePoint                   |
 | 3    | Add Configuration  | Enter Client ID, Client Secret, search_limit |
 | 4    | Save Configuration | Enable connector for organization            |
-| 5    | Connect in Chat    | Chat → Tools → Google Drive → Connect        |
-| 6    | Authorize Account  | Google OAuth flow                            |
+| 5    | Connect in Chat    | Chat → Tools → SharePoint → Connect          |
+| 6    | Authorize Account  | Microsoft OAuth flow                         |
 | 7    | Manage Access      | Activate/Deactivate connector                |
-| 8    | Revoke Access      | Google Account settings                      |
+| 8    | Revoke Access      | SharePoint Account settings                  |
 
 ## Next Steps
 
-Once configured, users can start asking questions about their Google Drive documents. VaultiScan will securely fetch, analyze, and provide AI-powered answers based on the most relevant documents in their Drive.
+Once configured, users can start asking questions about their SharePoint documents. VaultiScan will securely fetch, analyze, and provide AI-powered answers based on the most relevant documents in their Drive.
+
+```
+
+```
