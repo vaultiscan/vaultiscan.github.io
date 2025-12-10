@@ -48,11 +48,6 @@
   --ifm-font-family-monospace: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono",
     monospace;
 }
-.navbar__link {
-  font-weight: 800 !important;
-  size: 18px;
-}
-
 /* Dark mode adjustments */
 [data-theme="dark"] {
   --ifm-color-primary: #818cf8;
@@ -175,13 +170,22 @@
   margin-right: 0.5rem;
 }
 
-.navbar__title {
-  font-weight: 700;
-  color: var(--ifm-color-gray-900);
+/* Consistent styling for title and all nav items */
+.navbar__title,
+.navbar__link,
+.navbar__item,
+.navbar__item.dropdown > .navbar__link {
+  font-weight: 700 !important;
+  color: var(--ifm-color-gray-900) !important;
+  font-size: 16px !important;
+  font-family: var(--ifm-font-family-base) !important;
 }
 
-[data-theme="dark"] .navbar__title {
-  color: var(--ifm-color-gray-100);
+/* Dark mode */
+[data-theme="dark"] .navbar__title,
+[data-theme="dark"] .navbar__link,
+[data-theme="dark"] .navbar__item.dropdown > .navbar__link {
+  color: var(--ifm-color-gray-100) !important;
 }
 
 /* Footer styling */
