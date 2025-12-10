@@ -143,7 +143,35 @@ const sidebars = {
     {
       type: "doc",
       id: "connectors/dropbox/intro",
-      label: "Introduction",
+      label: "DropBox Connector",
+    },
+    {
+      type: "category",
+      label: "Getting Started",
+      items: [
+        "connectors/dropbox/configuration",
+        "connectors/dropbox/vaultiscan-setup",
+      ],
+    },
+    {
+      type: "doc",
+      id: "connectors/dropbox/security-and-privacy",
+      label: "Security and Privacy",
+    },
+    {
+      type: "doc",
+      id: "connectors/dropbox/troubleshooting",
+      label: "Troubleshooting",
+    },
+    {
+      type: "doc",
+      id: "connectors/dropbox/faq",
+      label: "FAQ",
+    },
+    {
+      type: "doc",
+      id: "connectors/dropbox/changelog",
+      label: "Changelog",
     },
     // Add sections...
   ],
